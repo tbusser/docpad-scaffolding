@@ -6,7 +6,8 @@
     "docpad": "~6.78.4",
     "docpad-plugin-handlebars": "~2.3.0",
     "docpad-plugin-nodesass": "~2.8.1",
-    "docpad-plugin-partials": "~2.9.2"
+    "docpad-plugin-partials": "~2.9.2",
+    "docpad-plugin-vash": "~2.0.0"
   },
   "main": "node_modules/.bin/docpad-server",
   "scripts": {
@@ -20,7 +21,6 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.2.0",
     "gulp-sourcemaps": "^1.6.0",
-    "remove-empty-directories": "0.0.1",
     "require-dir": "^0.3.0"
   }
 }

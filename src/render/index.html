@@ -1,0 +1,31 @@
+---
+isInvisible: 1
+layout: default
+title: Welcome
+---
+<h1>Welcome</h1>
+<p>
+	Welcome to the Docpad scaffolding project.
+</p>
+
+<h2>Partials</h2>
+There a couple of default partials included.
+
+<h3>head</h3>
+<p>
+	This partial will render the <code>head</code> element of the page. This partial uses the following meta data for configuration:
+</p>
+
+<dl>
+	<dt>document.title</dt>
+	<dd>In the YAML of the page you can specify the title property of the page.</dd>
+	<dt>document.isInvisble</dt>
+	<dd>
+		When this property is specified for the page <em>and</em> it's value is <code>1</code>, the following meta tag will be rendered in the <code>head</code> of the page:
+		<code>&lt;meta name="robots" content="noindex, follow"&gt;</code>
+	</dd>
+	<dt>noIndex</dt>
+	<dd>
+		You can also hide the page from search enginges by passing the variable <code>noIndex=1</code> along in the partial parameters. This can be done by calling the partial in the following way: <code>{{ partial 'document/head' noIndex="1" }}</code>
+	</dd>
+</dl>
