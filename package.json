@@ -1,0 +1,26 @@
+{
+  "name": "no-skeleton.docpad",
+  "version": "0.1.0",
+  "description": "New DocPad project without using a skeleton",
+  "dependencies": {
+    "docpad": "~6.78.4",
+    "docpad-plugin-handlebars": "~2.3.0",
+    "docpad-plugin-nodesass": "~2.8.1",
+    "docpad-plugin-partials": "~2.9.2"
+  },
+  "main": "node_modules/.bin/docpad-server",
+  "scripts": {
+    "start": "node_modules/.bin/docpad-server"
+  },
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "remove-empty-directories": "0.0.1",
+    "require-dir": "^0.3.0"
+  }
+}
