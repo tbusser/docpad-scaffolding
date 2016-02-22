@@ -1,0 +1,21 @@
+@{
+	var isStatic = (getEnvironments().indexOf('static') > -1),
+	    cssFile = '/static/css/site' + (isStatic ? '.min' : '') + '.css';
+}
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="@document.description">
+	<meta title="@document.title">
+
+	@if (noIndex || document.isInvisible) {
+	<meta name="robots" content="noindex, follow">
+	}
+
+	<link rel="stylesheet" href="@cssFile">
+
+	<!--[if lte IE 9]>
+	<script src="/static/js/shims/classList.js"></script>
+	<![endif]-->
+</head>
